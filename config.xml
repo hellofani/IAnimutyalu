@@ -13,8 +13,26 @@ Poems from Potana Telugu Bhagavatam.
 <author href="https://hellofani.com" email="hellofani@gmail.com">
 Fani Kiran Vulapalli
 </author>
-
-<preference name="orientation" value="portrait" />
-<preference name="Fullscreen" value="false" />
-
+	<preference name="phonegap-version" value="3.3.0" />
+	<icon src="appicon.png" gap:role="default" />	
+	<gap:splash src="splash.png" />
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="false" />
+	<preference name="permissions" value="none"/>
+	<!-- IOS Specific -->
+	<preference name="prerendered-icon" value="true" />
+	<preference name="ios-statusbarstyle" value="black-opaque" />
+	<preference name="detect-data-types" value="true" />
+	<preference name="exit-on-suspend" value="false" />
+	<preference name="show-splash-screen-spinner" value="true" />
+	<!-- End of IOS Specific -->
+	<!-- BlackBerry Specific -->
+	<preference name="disable-cursor" value="false" />
+	<!-- End of BlackBerry Specific -->
+	<!-- Android Specific -->
+	<preference name="android-minSdkVersion" value="8" />
+	<preference name="android-installLocation" value="auto" />
+	<preference name="splash-screen-duration" value="10000" />
+	<preference name="load-url-timeout" value="15000" />
+	<!-- End of Android Specific -->
 </widget>
