@@ -1,0 +1,129 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>పద్యాలు</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/Styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<style type="text/css">
+
+body {
+	background-color: rgba(166,29,44,1);
+}
+</style>
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/jquery.jplayer.js"></script>
+<script>
+	$(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            mp3: "audio/Padyamu01.mp3",
+            oga: "audio/Padyamu01.ogg"
+          });
+        },
+        swfPath: "/js",
+        supplied: "mp3,oga"
+      });
+    });
+	</script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1"><img src="img/banner.png" alt=""></div>
+  <div id="container">
+    <div id="poem">
+    	<ul>
+        	<li><a href="p001.html">పద్యం 1 : క్షోణితలంబు నెన్నుదురు </a> </li>
+            <li><a href="p002.html">పద్యం 2 : అంబ, నవాంబుజోజ్వల కరాంబుజ</a> </li>
+            <li><a href="p003.html">పద్యం 3 : శ్రీ కైవల్య పదంబుఁ </a> </li>
+            <li><a href="p004.html">పద్యం 4 : పుట్టంబుట్ట, శరంబునన్ మొలవ </a> </li>
+            <li><a href="p005.html">పద్యం 5 : అమ్మలఁ గన్నయమ్మ</a> </li>
+            <li><a href="p006.html">పద్యం 6 : చేతులారంగ శివునిఁ </a> </li>
+            <li><a href="p007.html">పద్యం 7 : పలికెడిది భాగవతమఁట</a> </li>
+            <li><a href="p008.html">పద్యం 8 : శ్రీకృష్ణా! యదుభూషణా! </a> </li>
+            <li><a href="p009.html">పద్యం 9 : కుప్పించి యెగసినఁ </a> </li>
+            <li><a href="p010.html">పద్యం 10: అల వైకుంఠపురంబులో </a> </li>
+        </ul>
+    
+    </div>
+    <div id="hideshow"></div>
+    <div id="bhavam"></div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+    <div id="Navigation">
+  <!--<div id="Player">
+  	<div id="jquery_jplayer_1" class="jp-jplayer">
+    </div>
+    <div id="jp_container_1" class="jp-audio">
+    	<div class="jp-type-single">
+        	<div class="jp-title">
+            	<ul>
+                	<li>Play Audio</li>
+                </ul>
+             </div>
+             
+             <div class="jp-gui jp-interface">
+             	<ul class="jp-controls">
+                	<li><a href="javascript:;" class="jp-play" tabindex="1">&#61515;</a></li>  
+                    <li><a href="javascript:;" class="jp-pause" tabindex="1">&#61516;</a></li>  
+                    <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">&#61480;</a></li>  
+                    <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">&#61478;</a></li>
+                 </ul>
+                 <div class="jp-progress">
+                 	<div class="jp-seek-bar">
+                    	<div class="jp-play-bar">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="jp-time-holder">
+                  		<div class="jp-current-time">
+                   		</div>
+                  </div> 
+                  <div class="jp-volume-bar">
+                  		<div class="jp-volume-bar-value">
+                        </div>
+                  </div>
+                  
+                  <div class="jp-no-solution">
+                  		<span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your
+                        <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                  </div>
+             </div>  
+			</div> 
+		</div>-->
+	<div>
+    <div id="back"><a href="p010.html">&nbsp;<i class="fa fa-caret-left"></i>&nbsp;</a></div>
+    <div id="navCenter"><a href="index.html">&nbsp;<i class="fa fa-list-ul"></i>&nbsp;</a></div>
+    <div id="naveNext"><a href="p001.html">&nbsp;<i class="fa fa-caret-right">&nbsp;</i></a></div>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,463 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+@font-face {  
+    font-family: "gautami";  
+    src: url("fonts/gautami.eot");  
+    src: url("fonts/gautami.eot?#iefix") format("eot"),   
+         url("fonts/gautami.woff") format("woff"),   
+         url("fonts/gautami.ttf") format("truetype"),   
+    font-weight: 400;  
+    font-style: normal; 
+}
+@font-face {  
+    font-family: "FontAwesome";  
+    src: url("fonts/fontawesome-webfont.eot");  
+    src: url("fonts/fontawesome-webfont.eot?#iefix") format("eot"),   
+         url("fonts/fontawesome-webfont.woff") format("woff"),   
+         url("fonts/fontawesome-webfont.ttf") format("truetype"),   
+         url("fonts/fontawesome-webfont.svg#FontAwesome") format("svg");  
+    font-weight: 400;  
+    font-style: normal;  
+}  
+a {  
+    text-decoration: none;  
+}  
+/* Player size*/
+.jp-jplayer,.jp-audio {  
+    width:420px;
+	margin: 10px auto;
+}
+/* Player Tittle*/
+.jp-title {  
+    font-size: 12px;  
+    text-align: center;  
+    color: #fff;  
+}  
+  
+.jp-title ul {  
+    padding: 0;  
+    margin: 0;  
+    list-style: none;  
+}
+/* Player color*/
+.jp-gui {  
+    position: relative;  
+    background: #f34927;  
+    background: -moz-linear-gradient(top,  #f34927 0%, #dd3311 100%);  
+    background: -webkit-gradient(linear, left top, left bottombottom, color-stop(0%,#f34927), color-stop(100%,#dd3311));  
+    background: -webkit-linear-gradient(top,  #f34927 0%,#dd3311 100%);  
+    background: -o-linear-gradient(top,  #f34927 0%,#dd3311 100%);  
+    background: -ms-linear-gradient(top,  #f34927 0%,#dd3311 100%);  
+    background: linear-gradient(to bottombottom,  #f34927 0%,#dd3311 100%);  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f34927', endColorstr='#dd3311',GradientType=0 );  
+    -webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, .1);      
+    box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, .1);  
+    border-radius: 3px;  
+    overflow: hidden;  
+    margin-top: 10px;  
+}
+/* Player Controls*/
+.jp-controls {  
+    padding: 0;  
+    margin: 0;  
+    list-style: none;  
+    font-family: "FontAwesome";  
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);  
+}  
+  
+.jp-controls li {  
+    display: inline;  
+}  
+  
+.jp-controls a {  
+    color: #fff;  
+}
+/* Player Buttons play and Pause*/
+.jp-play,.jp-pause {  
+    width: 60px;  
+    height: 40px;  
+    display: inline-block;  
+    text-align: center;  
+    line-height: 43px;  
+    border-right: 1px solid #d22f0f;  
+}  
+  
+.jp-controls .jp-play:hover,.jp-controls .jp-pause:hover {  
+    background-color: #de3918;  
+}  
+  
+.jp-mute,.jp-unmute {  
+    position: absolute;
+    right: 55px;  
+    top: 0;  
+    width: 20px;  
+    height: 40px;  
+    display: inline-block;  
+    line-height: 46px;  
+}  
+  
+.jp-mute {  
+    text-align: left;  
+}  
+.jp-time-holder {  
+    color: #FFF;  
+    font-size: 12px;  
+    line-height: 14px;  
+    position: absolute;  
+    right: 90px;  
+    top: 14px;  
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);  
+}
+/* Player Progress bar*/
+.jp-progress {  
+    background-color: #992E18;  
+    border-radius: 20px 20px 20px 20px;  
+    overflow: hidden;  
+    position: absolute;  
+    right: 133px;  
+    top: 15px;  
+    width: 210px;  
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;  
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;  
+}  
+  
+.jp-play-bar {  
+    height: 12px;  
+    background-color: #fff;  
+    border-radius: 20px 20px 20px 20px;  
+}  
+  
+.jp-volume-bar {  
+    position: absolute;  
+    right: 10px;  
+    top: 17px;  
+    width: 45px;  
+    height: 8px;  
+    border-radius: 20px 20px 20px 20px;  
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) inset;  
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) inset;  
+    background-color: #992E18;  
+    overflow: hidden;  
+}  
+  
+.jp-volume-bar-value {  
+    background-color: #fff;  
+    height: 8px;  
+    border-radius: 20px 20px 20px 20px;  
+}  
+
+a:link {color:#FFF;}    
+a:visited {color:#FFF;} 
+a:hover {color:#FFF;}  
+a:active {color:#FFF;}
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 0;/*1.96%;*/
+	padding-right: 0;/*1.96%;*/
+	background-color:rgba(166,29,44,1);
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#container {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	color:rgba(255,255,255,1);
+}
+#Player {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Navigation {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	position:absolute;
+	bottom:0;
+}
+#poem {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:20px;
+	width: 96%;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:20px;
+	display: block;
+	font-family:Gautami, "gautami";
+	font-size:1.2em;
+	color:rgba(255,255,255,1);
+	text-decoration:none;
+	line-height:1.8em;
+}
+#hideshow {
+	visibility:none;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 16.6666%;
+	display: block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.5em;
+	color:rgba(255,255,255,1);
+}
+#bhavam {
+	visibility:none;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family:Gautami, "gautami";
+	font-size:1em;
+	color:rgba(255,255,255,1);
+}
+#back {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 16.6666%;
+	display: block;
+	font-family: "FontAwesome";
+	font-size:3em;
+	color:rgba(255,255,255,1);
+}
+#navCenter {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 58.3333%;
+	display: block;
+	font-family: "FontAwesome";
+	font-size:2.5em;
+	color:rgba(255,255,255,1);
+	text-align:center;
+	alignment-adjust:central;
+}
+#naveNext {
+	clear: none;
+	float:right;
+	margin-left: 4.1666%;
+	width: 16.6666%;
+	display: block;
+	text-align:right;
+	font-family: "FontAwesome";
+	font-size:3em;
+	color:rgba(255,255,255,1);
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 95.55%;
+	padding-left: 1.225%;
+	padding-right: 1.225%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#container {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 74.3589%;
+	display: block;
+}
+#Player {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 23.0769%;
+	display: block;
+}
+#Navigation {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#poem {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family:Gautami, "gautami";
+}
+#hideshow {
+	visibility:none;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 10.2564%;
+	display: block;
+}
+#bhavam {
+	visibility:none;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family:Gautami, "gautami";
+}
+#back {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 10.2564%;
+	display: block;
+}
+#navCenter {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 74.3589%;
+	display: block;
+}
+#naveNext {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 10.2564%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#container {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 79.5918%;
+	display: block;
+	background-color:rgba(153,0,0,1);
+	font-size:24px;
+	color:rgba(255,255,255,1);
+}
+#Player {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 18.3673%;
+	display: block;
+}
+#Navigation {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#poem {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family:Gautami, "gautami";
+}
+#hideshow {
+	visibility:none;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 8.1632%;
+	display: block;
+}
+#bhavam {
+	visibility:none;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family:Gautami, "gautami";
+}
+#back {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 18.3673%;
+	display: block;
+}
+#navCenter {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 59.1836%;
+	display: block;
+}
+#naveNext {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 18.3673%;
+	display: block;
+	text-align:right;
+}
+}

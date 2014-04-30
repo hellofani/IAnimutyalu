@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.fanikiran.ianimutyalu"
+    version   = "1.0.0">
+
+<name>I Animutyalu</name>
+
+<description>
+Poems from Potana Telugu Bhagavatam.
+</description>
+
+<author href="https://hellofani.com" email="hellofani@gmail.com">
+Fani Kiran Vulapalli
+</author>
+
+<preference name="orientation" value="portrait" />
+<preference name="Fullscreen" value="false" />
+
+</widget>
